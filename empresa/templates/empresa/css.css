@@ -1,0 +1,25 @@
+.hero-section {
+    background: url('https://via.placeholder.com/1200x600') no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 150px 0;
+}
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+.footer a {
+    color: #ddd;
+}
+.footer a:hover {
+    color: white;
+}
+.feature {
+    padding: 50px 0;
+}
+.contact-form {
+    background-color: #f8f9fa;
+    padding: 50px;
+}

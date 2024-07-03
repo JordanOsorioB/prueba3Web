@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiénes Somos - InnovateNow</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .navbar-custom {
+            background-color: #007bff;
+        }
+        .navbar-custom .navbar-brand {
+            color: white;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 
+        }
+        .navbar-custom .navbar-brand:hover {
+            color: #707070;
+        }
+        .navbar-custom .nav-link {
+            color: white; 
+        }
+        .navbar-custom .nav-link:hover {
+            color: #000000; 
+        }
+        .footer {
+            background-color: #555555;
+            color: rgb(255, 255, 255);
+            padding: 20px 0;
+        }
+        .footer a {
+            color: #ddd;
+        }
+        .footer a:hover {
+            color: white;
+        }
+        .feature {
+            padding: 50px 0;
+        }
+        .contact-form {
+            background-color: #4fc2e6;
+            padding: 50px;
+        }
+        .card {
+            border: none;
+            background-color: #e3f2fd; /* Color celeste */
+        }
+        .card-body {
+            padding: 2rem;
+        }
+        .block-section {
+            padding: 50px 0;
+            text-align: center;
+            color: white;
+        }
+        .bg-primary {
+            background-color: #007bff !important;
+        }
+        .bg-secondary {
+            background-color: #6c757d !important;
+        }
+        .bg-success {
+            background-color: #28a745 !important;
+        }
+        .bg-info {
+            background-color: #17a2b8 !important;
+        }
+        .bg-warning {
+            background-color: #ffc107 !important;
+        }
+        .bg-danger {
+            background-color: #dc3545 !important;
+        }
+    </style>
+</head>
+<body>
+    {% load static %}
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">InnovateNow</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    {% for Navbar in Navbars %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ Navbar.url }}">{{ Navbar.nombre }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <section id="about" class="feature text-center">
+            <h2>Sobre Nosotros</h2>
+            <p class="lead">En InnovateNow, ofrecemos una amplia gama de servicios que incluyen consultoría estratégica, desarrollo de software, marketing digital, formación y capacitación, y asesoramiento financiero. Nuestra misión es apoyar a los emprendedores en cada etapa de su viaje, desde la idea inicial hasta el lanzamiento y más allá.</p>
+            <p class="lead">Fundada en el corazón de la innovación, InnovateNow se ha convertido en un faro para los emprendedores que buscan no solo financiamiento, sino también un ecosistema que fomente el crecimiento y la innovación. Nuestro enfoque holístico abarca desde la incubación de ideas hasta la aceleración de negocios consolidados, proporcionando las herramientas necesarias para competir en un mercado global.</p>
+            <p class="lead">Nuestro equipo está compuesto por expertos en tecnología, negocios, marketing y finanzas, quienes trabajan de la mano con cada start-up para identificar oportunidades, superar desafíos y lograr un crecimiento sostenible. Creemos firmemente en el poder de la colaboración y la comunidad, y es por eso que hemos creado una red de mentores, inversores y socios estratégicos que están comprometidos con el éxito de nuestros emprendedores.</p>
+            <p class="lead">Además, en InnovateNow, estamos comprometidos con la sostenibilidad y la responsabilidad social. Nos esforzamos por apoyar proyectos que no solo sean rentables, sino que también tengan un impacto positivo en la sociedad y el medio ambiente. Nuestro objetivo es ser el catalizador que impulsa a los emprendedores a construir un futuro mejor para todos.</p>
+            <p class="lead">Únete a nosotros en esta emocionante aventura y descubre cómo podemos ayudarte a transformar tu idea en una realidad próspera y sostenible.</p>
+        </section>
+
+        <section id="team" class="feature text-center">
+            <h2>Nuestro Equipo</h2>
+            <p class="lead">Conoce al equipo de expertos dedicados a ayudarte a alcanzar el éxito.</p>
+            <div class="row">
+                {% for trabajador in Trabajadores %}
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ trabajador.nombre }} {{ trabajador.apellido_paterno }}</h5>
+                            <p class="card-text">
+                                <strong>Fecha de Ingreso:</strong> {{ trabajador.fecha_ingreso }}<br>
+                                <strong>Teléfono:</strong> {{ trabajador.telefono }}<br>
+                                <strong>Email:</strong> {{ trabajador.email }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+
+       
+    </main>
+    <br><br>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Contáctanos</h5>
+                    <ul class="list-unstyled">
+                        <li>Email: <a href="mailto:contacto@innovenow.com">contacto@innovenow.com</a></li>
+                        <li>Teléfono: <a href="tel:+56912345678">+56912345678</a></li>
+                        <li>Dirección: Calle Falsa 123, Santiago, Chile</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 text-end">
+                    <p>&copy; 2024 InnovateNow. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
