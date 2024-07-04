@@ -1,0 +1,129 @@
+
+.navbar-custom {
+    background-color: #007bff;
+}
+.navbar-custom .navbar-brand {
+    color: white; 
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+.navbar-custom .navbar-brand:hover {
+    color:#707070; 
+}
+.navbar-custom .nav-link {
+    color: white; 
+}
+.navbar-custom .nav-link:hover {
+    color: #000000;
+}
+.footer {
+    background-color: #555555;
+    color: rgb(255, 255, 255);
+    padding: 20px 0;
+}
+.footer a {
+    color: #ddd;
+}
+.footer a:hover {
+    color: white;
+}
+.feature {
+    padding: 50px 0;
+}
+.contact-form {
+    background-color: #4fc2e6;
+    padding: 50px;
+}
+.card {
+    border: none;
+}
+.card-body {
+    padding: 2rem;
+}
+.block-section {
+    padding: 50px 0;
+    text-align: center;
+    color: white;
+}
+.bg-primary {
+    background-color: #007bff !important;
+}
+.bg-secondary {
+    background-color: #6c757d !important;
+}
+.bg-success {
+    background-color: #28a745 !important;
+}
+.bg-info {
+    background-color: #17a2b8 !important;
+}
+.bg-warning {
+    background-color: #ffc107 !important;
+}
+.bg-danger {
+    background-color: #dc3545 !important;
+}
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    max-height: 900px; 
+    object-fit: cover; 
+}
+.team-image img {
+    width: 100%;
+    height: auto;
+    max-height: 400px; 
+    object-fit: cover; 
+    object-position: 0 40%;
+}
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #3176a3; /* Color de fondo */
+    color: rgb(0, 0, 0); /* Color del icono */
+    border: none;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+.scroll-to-top:hover {
+    background-color: #0000ff; /* Color de fondo al pasar el mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra al pasar el mouse */
+}
+
+.scroll-to-top i {
+    margin-top: 13px; /* Ajusta este valor según sea necesario */
+}
+.scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: #2c2c2c; /* Fondo rojo */
+    color: #ffffff; /* Icono blanco */
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.scroll-to-top:hover {
+    transform: scale(1.1); /* Efecto de expansión */
+}
+
+.scroll-to-top i {
+    font-size: 24px;
+}

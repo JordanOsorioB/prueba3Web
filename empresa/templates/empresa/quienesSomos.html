@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -5,79 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiénes Somos - InnovateNow</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        .navbar-custom {
-            background-color: #007bff;
-        }
-        .navbar-custom .navbar-brand {
-            color: white;
-            font-weight: bold;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 
-        }
-        .navbar-custom .navbar-brand:hover {
-            color: #707070;
-        }
-        .navbar-custom .nav-link {
-            color: white; 
-        }
-        .navbar-custom .nav-link:hover {
-            color: #000000; 
-        }
-        .footer {
-            background-color: #555555;
-            color: rgb(255, 255, 255);
-            padding: 20px 0;
-        }
-        .footer a {
-            color: #ddd;
-        }
-        .footer a:hover {
-            color: white;
-        }
-        .feature {
-            padding: 50px 0;
-        }
-        .contact-form {
-            background-color: #4fc2e6;
-            padding: 50px;
-        }
-        .card {
-            border: none;
-            background-color: #e3f2fd; /* Color celeste */
-        }
-        .card-body {
-            padding: 2rem;
-        }
-        .block-section {
-            padding: 50px 0;
-            text-align: center;
-            color: white;
-        }
-        .bg-primary {
-            background-color: #007bff !important;
-        }
-        .bg-secondary {
-            background-color: #6c757d !important;
-        }
-        .bg-success {
-            background-color: #28a745 !important;
-        }
-        .bg-info {
-            background-color: #17a2b8 !important;
-        }
-        .bg-warning {
-            background-color: #ffc107 !important;
-        }
-        .bg-danger {
-            background-color: #dc3545 !important;
-        }
-    </style>
+    <link href="{% static 'css/index.css' %}" rel="stylesheet">
 </head>
 <body>
     {% load static %}
     <nav class="navbar navbar-expand-lg navbar-custom">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">InnovateNow</a>
+            <a class="navbar-brand" href="index">InnovateNow</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
