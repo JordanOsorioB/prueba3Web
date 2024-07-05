@@ -82,8 +82,8 @@
     right: 20px;
     width: 40px;
     height: 40px;
-    background-color: #3176a3; /* Color de fondo */
-    color: rgb(0, 0, 0); /* Color del icono */
+    background-color: #3176a3; 
+    color: rgb(0, 0, 0); 
     border: none;
     border-radius: 50%;
     text-align: center;
@@ -94,12 +94,12 @@
     transition: background-color 0.3s, box-shadow 0.3s;
 }
 .scroll-to-top:hover {
-    background-color: #0000ff; /* Color de fondo al pasar el mouse */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra al pasar el mouse */
+    background-color: #0000ff; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
 }
 
 .scroll-to-top i {
-    margin-top: 13px; /* Ajusta este valor según sea necesario */
+    margin-top: 13px; 
 }
 .scroll-to-top {
     position: fixed;
@@ -107,8 +107,8 @@
     right: 30px;
     width: 50px;
     height: 50px;
-    background-color: #2c2c2c; /* Fondo rojo */
-    color: #ffffff; /* Icono blanco */
+    background-color: #2c2c2c; 
+    color: #ffffff; 
     border: none;
     border-radius: 50%;
     display: flex;
@@ -121,7 +121,7 @@
 }
 
 .scroll-to-top:hover {
-    transform: scale(1.1); /* Efecto de expansión */
+    transform: scale(1.1); 
 }
 
 .scroll-to-top i {
