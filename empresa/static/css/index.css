@@ -1,21 +1,28 @@
+/*Menú Navbar*/
+
 
 .navbar-custom {
-    background-color: #007bff;
+    background-color: #2b4772;
 }
 .navbar-custom .navbar-brand {
     color: white; 
     font-weight: bold;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
+.navbar-toggler-icon {
+    color: white; /* Cambia el color según tus preferencias */
+}
 .navbar-custom .navbar-brand:hover {
     color:#707070; 
 }
 .navbar-custom .nav-link {
-    color: white; 
+    color: rgb(255, 255, 255); 
 }
 .navbar-custom .nav-link:hover {
     color: #000000;
 }
+ /*Fooder o pie de página*/
+
 .footer {
     background-color: #555555;
     color: rgb(255, 255, 255);
@@ -27,6 +34,9 @@
 .footer a:hover {
     color: white;
 }
+
+
+/*Varios*/
 .feature {
     padding: 50px 0;
 }
@@ -72,6 +82,9 @@
     object-fit: cover; 
     object-position: 0 40%;
 }
+
+
+/*Scroll para subir rápido*/
 .scroll-to-top {
     position: fixed;
     bottom: 20px;
@@ -124,8 +137,12 @@
     font-size: 24px;
 }
 
+
+
+/*Formulario contactanos*/
+
 .contact-form {
-    background-color: #4a515a;
+    background-color: #878c92;
     padding: 50px;
     border: 2px solid black;
     margin: 20px auto;
